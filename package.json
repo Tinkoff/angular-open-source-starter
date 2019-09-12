@@ -30,9 +30,19 @@
         "publish": "npm run build:all && npm publish:all"
     },
     "description": "This is a template project to develop, create and open-source Angular libraries with demos",
-    "keywords": ["angular", "ng", "workspace", "library", "starter", "tinkoff"],
+    "keywords": [
+        "angular",
+        "ng",
+        "workspace",
+        "library",
+        "starter",
+        "tinkoff"
+    ],
     "license": "Apache-2.0",
-    "authors": ["Roman Sedov <r.sedov@tinkoff.ru>", "Alex Inkin <a.inkin@tinkoff.ru>"],
+    "authors": [
+        "Roman Sedov <r.sedov@tinkoff.ru>",
+        "Alex Inkin <a.inkin@tinkoff.ru>"
+    ],
     "repository": "https://github.com/TinkoffCreditSystems/angular-library-starter",
     "bugs": "https://github.com/TinkoffCreditSystems/angular-library-starter/issues",
     "homepage": "https://github.com/TinkoffCreditSystems/angular-library-starter#README",
@@ -73,7 +83,8 @@
         "@types/node": "~8.9.4",
         "codelyzer": "^5.1.0",
         "coveralls": "^3.0.5",
-        "http-server": "0.9.0",
+        "ecstatic": "^4.1.2",
+        "http-server": "^0.11.1",
         "husky": "^3.0.2",
         "jasmine-core": "~3.4.0",
         "jasmine-spec-reporter": "~4.2.1",
@@ -83,6 +94,7 @@
         "karma-jasmine": "~2.0.1",
         "karma-jasmine-html-reporter": "^1.4.2",
         "lint-staged": "^9.2.1",
+        "lodash": "^4.17.15",
         "ng-packagr": "4.7.1",
         "prettier": "^1.18.2",
         "standard-version": "^7.0.0",
@@ -97,7 +109,10 @@
         }
     },
     "lint-staged": {
-        "*.{js,ts,html,md,less,json}": ["prettier --write", "git add"],
+        "*.{js,ts,html,md,less,json}": [
+            "prettier --write",
+            "git add"
+        ],
         "*.ts": "tslint"
     },
     "standard-version": {
