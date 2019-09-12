@@ -1,5 +1,7 @@
 # Angular Open-source Starter
+
 ![Travis (.org)](https://img.shields.io/travis/TinkoffCreditSystems/angular-open-source-starter)
+
 ## How to use
 
 > This is a starter project for creating open-source libraries for Angular.
@@ -41,9 +43,9 @@
 3.  CI and code coverage are ready, configured to use
     [Travis](http://travis-ci.org/) and [Coveralls](https://coveralls.io).
     Just authorize on [Travis](http://travis-ci.org/) with your Github account
-    and enable your repository. If you want to have more than one library in
-    your workspace add `COVERALLS_PARALLEL=true` to [Travis](http://travis-ci.org/)
-    Environmental variables.
+    and enable your repository and do the same on [Coveralls](https://coveralls.io).
+    If you want to have more than one library in your workspace add
+    `COVERALLS_PARALLEL=true` to [Travis](http://travis-ci.org/) Environmental variables.
 
 4.  Precommit checks, prettier, linter and all that jazz is there.
 
