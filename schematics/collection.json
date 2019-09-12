@@ -1,0 +1,10 @@
+{
+    "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "library-starter": {
+            "description": "A blank schematic.",
+            "factory": "./library-starter/index#libraryStarter",
+            "schema": "./library-starter/schema.json"
+        }
+    }
+}
