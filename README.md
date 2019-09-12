@@ -1,5 +1,5 @@
 # Angular Open-source Starter
-
+![Travis (.org)](https://img.shields.io/travis/TinkoffCreditSystems/angular-open-source-starter)
 ## How to use
 
 > This is a starter project for creating open-source libraries for Angular.

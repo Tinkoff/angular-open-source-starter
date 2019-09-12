@@ -70,7 +70,9 @@
                     "options": {
                         "main": "projects/demo/src/test.ts",
                         "tsConfig": "projects/demo/tsconfig.spec.json",
-                        "karmaConfig": "projects/demo/karma.conf.js"
+                        "karmaConfig": "projects/demo/karma.conf.js",
+                        "codeCoverage": true,
+                        "browsers": "ChromeHeadless"
                     }
                 },
                 "lint": {
