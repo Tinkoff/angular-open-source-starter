@@ -56,3 +56,9 @@
 
 6.  You can add more libraries using the same `npm run add` command to create a whole Angular Workspace
     with multiple libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
+
+## Angular 8
+
+Don't need your library to support Angular 7 and below? Run following command to update packages for Angular 8+:
+
+    ng update @angular/cli @angular/compiler-cli @angular/core @nguniversal/common tsickle
