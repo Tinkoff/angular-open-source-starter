@@ -15,9 +15,11 @@
 
 3. Fill in `projects/[your-library-name]/package.json` metadata for your newly generated library
 
-4. Updated root `package.json` metadata to represent your project
+4. Add your email at [INSERT YOUR EMAIL HERE] in `CODE_OF_CONDUCT.md`
 
-5. Code your library and create demo for it
+5. Updated root `package.json` metadata to represent your project
+
+6. Code your library and create demo for it
 
 ## Cool features
 
