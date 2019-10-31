@@ -17,9 +17,11 @@
 
 4. Add your email at [INSERT YOUR EMAIL HERE] in `CODE_OF_CONDUCT.md`
 
-5. Updated root `package.json` metadata to represent your project
+5. Update `LICENSE` file according to your preferences
 
-6. Code your library and create demo for it
+6. Updated root `package.json` metadata to represent your project
+
+7. Code your library and create demo for it
 
 ## Cool features
 
