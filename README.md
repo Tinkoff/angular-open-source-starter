@@ -9,7 +9,7 @@
 > It is designed to be used for open-sourcing libraries on Github and has everything
 > you'd need ready for CI, code coverage, SSR testing, StackBlitz demo deployment and more.
 
-1. Run `npm i` to install everything
+1. Run `npm ci` to install everything
 
 2. Run `npm run add [your-library-name]` to create basic file structure
 
