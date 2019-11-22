@@ -17,7 +17,7 @@
                         "index": "src/index.html",
                         "main": "src/main.browser.ts",
                         "polyfills": "src/polyfills.ts",
-                        "tsConfig": "tsconfig.stackblitz.json",
+                        "tsConfig": "tsconfig.demo.json",
                         "aot": false,
                         "assets": ["src/favicon.ico"],
                         "styles": ["src/styles.css"],
@@ -51,7 +51,7 @@
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
-                        "tsConfig": ["tsconfig.stackblitz.json"],
+                        "tsConfig": ["tsconfig.demo.json"],
                         "exclude": ["**/node_modules/**"]
                     }
                 }
