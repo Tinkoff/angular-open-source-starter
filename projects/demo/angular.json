@@ -47,13 +47,6 @@
                             "browserTarget": "demo:build:production"
                         }
                     }
-                },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": ["tsconfig.demo.json"],
-                        "exclude": ["**/node_modules/**"]
-                    }
                 }
             }
         }
