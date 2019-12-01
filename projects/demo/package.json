@@ -5,8 +5,7 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
-        "build": "ng build",
-        "lint": "ng lint"
+        "build": "ng build"
     },
     "dependencies": {
         "@angular/common": "^8.2.4",
