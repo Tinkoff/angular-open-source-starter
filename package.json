@@ -39,9 +39,13 @@
         "tinkoff"
     ],
     "license": "Apache-2.0",
-    "authors": [
-        "Roman Sedov <r.sedov@tinkoff.ru>",
-        "Alex Inkin <a.inkin@tinkoff.ru>"
+    "author": {
+        "name": "Roman Sedov",
+        "email": "79601794011@ya.ru",
+        "url" : "http://marsibarsi.me/"
+    },
+    "contributors": [
+        "Alex Inkin <alexander@inkin.ru>"
     ],
     "repository": "https://github.com/TinkoffCreditSystems/angular-library-starter",
     "bugs": "https://github.com/TinkoffCreditSystems/angular-library-starter/issues",
