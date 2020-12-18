@@ -15,4 +15,4 @@ platformBrowserDynamic()
 
         windowRef['ngRef'] = ref;
     })
-    .catch(err => console.error(err));
+    .catch(console.error);
