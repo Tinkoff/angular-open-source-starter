@@ -52,7 +52,7 @@
 5.  You can also deploy your demo to [StackBlitz](https://stackblitz.com) with no hustle,
     just use link in the following format:
 
-        https://stackblitz.com/github/[User|Organization]/[Repository]/tree/master/projects/demo
+        https://stackblitz.com/github/[User|Organization]/[Repository]/tree/main/projects/demo
 
 6.  You can add more libraries using the same `npm run add` command to create a whole Angular Workspace
     with multiple libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
