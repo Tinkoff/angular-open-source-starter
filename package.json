@@ -13,7 +13,6 @@
         "compile:server": "tsc -p ./projects/demo/tsconfig.ssr.json",
         "generate:prerender": "node dist/demo/ssr/prerender",
         "test": "ng test",
-        "posttest": "node scripts/coveralls.js",
         "preadd": "npm run build:schematics",
         "add": "schematics ./schematics/collection.json:library-starter --debug=false",
         "postadd": "git add ./projects",
