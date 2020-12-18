@@ -42,14 +42,10 @@
 2.  This project has Angular Universal —
     you can easily test your library with SSR and Prerender:
 
-    `npm run start:ssr` or `npm run start:prerender`
+    `npm run dev:ssr` or `npm run prerender`
 
-3.  CI and code coverage are ready, configured to use
-    [Travis](http://travis-ci.org/) and [Coveralls](https://coveralls.io).
-    Just authorize on [Travis](http://travis-ci.org/) with your Github account
-    and enable your repository and do the same on [Coveralls](https://coveralls.io).
-    If you want to have more than one library in your workspace add
-    `COVERALLS_PARALLEL=true` to [Travis](http://travis-ci.org/) Environmental variables.
+3.  CI and code coverage are ready, Github Action checks that packages build, test and lint correctly.
+    It also sends test results to [Coveralls](https://coveralls.io).
 
 4.  Precommit checks, prettier, linter and all that jazz is there.
 
@@ -61,15 +57,15 @@
 6.  You can add more libraries using the same `npm run add` command to create a whole Angular Workspace
     with multiple libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
 
-## Angular 8
+## View Engine
 
-Don't need your library to support Angular 7 and below? Run following command to update packages for Angular 8+:
+This starter uses Angular 9. This way your libraries will be supported across all Angular versions in Ivy world.
+If you need to support older versions of Angular like 6 and above, you can use tag `view-engine` of this repository as
+your starting point as it is running Angular 7.
 
-    ng update @angular/cli @angular/compiler-cli @angular/core @nguniversal/common tsickle
-    
 ## Badge
 
-Show that your project is based off of our starter 
+Show that your project is based off of our starter
 
 [![angular-open-source-starter](https://img.shields.io/badge/made%20with-angular--open--source--starter-d81676?logo=angular)](https://github.com/TinkoffCreditSystems/angular-open-source-starter)
 

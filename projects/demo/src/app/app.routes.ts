@@ -5,16 +5,16 @@ import {StaticComponent} from './modules/static/static.component';
 export const appRoutes: Routes = [
     {
         path: '',
-        component: StaticComponent
+        component: StaticComponent,
     },
     {
         path: 'lazy',
-        loadChildren: './modules/lazy/lazy.module#LazyModule',
+        loadChildren: () => import(`./modules/lazy/lazy.module`).then(m => m.LazyModule),
     },
     {
         path: '**',
         redirectTo: '',
-    }
+    },
 ];
 
 @NgModule({

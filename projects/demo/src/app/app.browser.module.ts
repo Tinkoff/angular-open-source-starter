@@ -8,7 +8,9 @@ import {StaticModule} from './modules/static/static.module';
 @NgModule({
     bootstrap: [AppComponent],
     imports: [
-        BrowserModule.withServerTransition({appId: 'demo'}),
+        BrowserModule.withServerTransition({
+            appId: 'demo',
+        }),
         AppRoutingModule,
         StaticModule,
     ],

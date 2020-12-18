@@ -2,7 +2,7 @@
     "name": "<%= dasherize(name) %>",
     "version": "1.0.0",
     "peerDependencies": {
-        "@angular/core": ">=4.0.0"
+        "@angular/core": ">=9.0.0"
     },
     "description": "",
     "keywords": [],
