@@ -44,12 +44,8 @@
 
     `npm run dev:ssr` or `npm run prerender`
 
-3.  CI and code coverage are ready, configured to use
-    [Travis](http://travis-ci.org/) and [Coveralls](https://coveralls.io).
-    Just authorize on [Travis](http://travis-ci.org/) with your Github account
-    and enable your repository and do the same on [Coveralls](https://coveralls.io).
-    If you want to have more than one library in your workspace add
-    `COVERALLS_PARALLEL=true` to [Travis](http://travis-ci.org/) Environmental variables.
+3.  CI and code coverage are ready, Github Action checks that packages build, test and lint correctly.
+    It also sends test results to [Coveralls](https://coveralls.io).
 
 4.  Precommit checks, prettier, linter and all that jazz is there.
 
