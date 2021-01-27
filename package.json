@@ -12,7 +12,7 @@
         "serve:prerender": "cd dist/demo/browser && http-server",
         "compile:server": "tsc -p ./projects/demo/tsconfig.ssr.json",
         "generate:prerender": "node dist/demo/ssr/prerender",
-        "test": "ng test",
+        "test": "ng test --code-coverage=true",
         "preadd": "npm run build:schematics",
         "add": "schematics ./schematics/collection.json:library-starter --debug=false",
         "postadd": "git add ./projects",
