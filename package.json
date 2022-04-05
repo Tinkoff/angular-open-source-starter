@@ -27,17 +27,27 @@
         "publish": "npm run build:all && npm run publish:all"
     },
     "description": "This is a template project to develop, create and open-source Angular libraries with demos",
-    "keywords": ["angular", "ng", "workspace", "library", "starter", "tinkoff"],
+    "keywords": [
+        "angular",
+        "ng",
+        "workspace",
+        "library",
+        "starter",
+        "tinkoff"
+    ],
     "license": "Apache-2.0",
     "author": {
         "name": "Roman Sedov",
         "email": "79601794011@ya.ru",
         "url": "http://marsibarsi.me/"
     },
-    "contributors": ["Alex Inkin <alexander@inkin.ru>"],
-    "repository": "https://github.com/TinkoffCreditSystems/angular-library-starter",
-    "bugs": "https://github.com/TinkoffCreditSystems/angular-library-starter/issues",
-    "homepage": "https://github.com/TinkoffCreditSystems/angular-library-starter#README",
+    "contributors": [
+        "Alex Inkin <alexander@inkin.ru>",
+        "Maksim Ivanov <splincodewd@yandex.ru>"
+    ],
+    "repository": "https://github.com/tinkoff/angular-open-source-starter",
+    "bugs": "https://github.com/tinkoff/angular-open-source-starter/issues",
+    "homepage": "https://github.com/tinkoff/angular-open-source-starter#README",
     "schematics": "./schematics/collection.json",
     "dependencies": {
         "@angular/animations": "^9.1.13",
@@ -86,13 +96,17 @@
         "karma-jasmine-html-reporter": "^1.5.4",
         "lint-staged": "^10.5.3",
         "ng-packagr": "9.1.5",
-        "prettier": "^2.2.1",
         "standard-version": "^9.0.0",
         "stylelint": "^10.0.1",
         "ts-node": "^9.1.1",
         "tslint": "~5.15.0",
         "tsutils": "^3.17.1",
-        "typescript": "~3.8.3"
+        "typescript": "~3.8.3",
+        "@tinkoff/eslint-config": "^1.29.2",
+        "@tinkoff/eslint-config-angular": "^1.29.0",
+        "@tinkoff/prettier-config": "^1.29.1",
+        "@tinkoff/stylelint-config": "^1.16.1",
+        "prettier": "^2.6.2"
     },
     "husky": {
         "hooks": {
@@ -101,7 +115,10 @@
         }
     },
     "lint-staged": {
-        "*.{js,ts,html,md,less,json}": ["prettier --write", "git add"],
+        "*.{js,ts,html,md,less,json}": [
+            "prettier --write",
+            "git add"
+        ],
         "*.ts": "tslint --fix"
     },
     "standard-version": {
