@@ -1,6 +1,9 @@
 # Angular Open-source Starter
 
-![Travis (.org)](https://img.shields.io/travis/TinkoffCreditSystems/angular-open-source-starter)
+[![Deploy](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/deploy.yml/badge.svg)](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/deploy.yml)
+[![Unit tests](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/test.yml/badge.svg)](https://github.com/Tinkoff/angular-open-source-starter/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/Tinkoff/angular-open-source-starter/branch/main/graph/badge.svg?token=KfV90T6KkK)](https://codecov.io/gh/Tinkoff/angular-open-source-starter)
+[![Demo](https://img.shields.io/badge/demo-website-green)](https://tinkoff.github.io/angular-open-source-starter/)
 
 ## How to use
 
@@ -24,42 +27,50 @@
 
 ## Cool features
 
-1.  Versioning is ready for you with following simple commands:
+- [x] Versioning is ready for you with following simple commands:
 
-    ```json
-        "release": "standard-version",
-        "release:patch": "npm run release -- --release-as patch",
-        "release:minor": "npm run release -- --release-as minor",
-        "release:major": "npm run release -- --release-as major",
-        "publish": "npm run build:all && npm publish:all"
-    ```
+```json
+{
+  "release": "standard-version",
+  "release:patch": "npm run release -- --release-as patch",
+  "release:minor": "npm run release -- --release-as minor",
+  "release:major": "npm run release -- --release-as major",
+  "publish": "npm run build:all && npm publish:all"
+}
+```
 
-    Just use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) format and `CHANGELOG.md`
-    will be automatically generated on releases by
-    [Standard Version](https://github.com/conventional-changelog/standard-version#standard-version).
+Just use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/) format and `CHANGELOG.md` will be
+automatically generated on releases by
+[Standard Version](https://github.com/conventional-changelog/standard-version#standard-version).
 
-2.  This project has Angular Universal — you can easily test your library with SSR and Prerender:
+- [x] This project has Angular Universal — you can easily test your library with SSR and Prerender:
 
-    `npm run dev:ssr` or `npm run prerender`
+  `npm run dev:ssr` or `npm run prerender`
 
-3.  CI and code coverage are ready, GitHub Action checks that packages build, test and lint correctly. It also sends
-    test results to [Coveralls](https://coveralls.io).
+- [x] CI and code coverage are ready, GitHub Action checks that packages build, test and lint correctly. It also sends
+      test results to [Codecov](https://about.codecov.io).
 
-4.  Precommit checks, prettier, linter and all that jazz is there.
+- [x] Precommit checks, prettier, linter and all that jazz is there.
 
-5.  You can also deploy your demo to [StackBlitz](https://stackblitz.com) with no hustle, just use link in the following
-    format:
+- [x] You can also deploy your demo to [StackBlitz](https://stackblitz.com) with no hustle, just use link in the
+      following format:
 
-        https://stackblitz.com/github/[User|Organization]/[Repository]/tree/main/projects/demo
+         https://stackblitz.com/github/[User|Organization]/[Repository]/tree/main/projects/demo
 
-6.  You can add more libraries using the same `npm run add` command to create a whole Angular Workspace with multiple
-    libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
+- [x] You can add more libraries using the same `npm run add` command to create a whole Angular Workspace with multiple
+      libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
 
-## View Engine
+## Infrastructure
 
-This starter uses Angular 9. This way your libraries will be supported across all Angular versions in Ivy world. If you
-need to support older versions of Angular like 6 and above, you can use tag `view-engine` of this repository as your
-starting point as it is running Angular 7.
+- [x] GitHub Actions
+- [x] Node.js 16, npm 8
+- [ ] Nx 13+
+- [ ] Angular 12+
+- [ ] TypeScript 4+
+- [x] Prettier 2.6+
+- [x] Stylelint 14+
+- [ ] ESLint 7+
+- [ ] Husky 7+
 
 ## Badge
 
