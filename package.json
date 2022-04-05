@@ -8,7 +8,7 @@
         "dev:ssr": "ng run demo:serve-ssr",
         "build:ssr": "ng build --prod && ng run demo:server:production",
         "prerender": "ng run demo:prerender",
-        "build": "ng build",
+        "build": "ng build -c=production --prod",
         "build:schematics": "tsc -p tsconfig.schematics.json",
         "serve:prerender": "cd dist/demo/browser && http-server",
         "compile:server": "tsc -p ./projects/demo/tsconfig.ssr.json",

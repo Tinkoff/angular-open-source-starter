@@ -49,3 +49,9 @@ runs:
     - run: npm ci
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
       shell: bash
+
+    - name: environment
+      shell: bash
+      run: |
+        node -v
+        npm -v
