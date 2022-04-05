@@ -19,7 +19,7 @@
                         "index": "projects/demo/src/index.html",
                         "main": "projects/demo/src/main.browser.ts",
                         "polyfills": "projects/demo/src/polyfills.ts",
-                        "tsConfig": "tsconfig.json",
+                        "tsConfig": "projects/demo/tsconfig.app.json",
                         "aot": false,
                         "assets": ["projects/demo/src/favicon.ico"],
                         "styles": ["projects/demo/src/styles.css"],
