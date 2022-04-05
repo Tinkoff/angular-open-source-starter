@@ -73,13 +73,6 @@
                         "browsers": "ChromeHeadless"
                     }
                 },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": ["tsconfig.json"],
-                        "exclude": ["**/node_modules/**"]
-                    }
-                },
                 "server": {
                     "builder": "@angular-devkit/build-angular:server",
                     "options": {

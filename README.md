@@ -69,8 +69,8 @@ automatically generated on releases by
 - [ ] TypeScript 4+
 - [x] Prettier 2.6+
 - [x] Stylelint 14+
-- [ ] ESLint 7+
-- [ ] Husky 7+
+- [x] ESLint 7+
+- [x] Husky 7+
 
 ## Badge
 
