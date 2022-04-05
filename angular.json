@@ -13,8 +13,8 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "baseHref": "/",
-                        "deployUrl": "/",
+                        "baseHref": "./",
+                        "deployUrl": "./",
                         "outputPath": "dist/demo/browser",
                         "index": "projects/demo/src/index.html",
                         "main": "projects/demo/src/main.browser.ts",
