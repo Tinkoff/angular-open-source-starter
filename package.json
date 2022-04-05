@@ -17,6 +17,7 @@
         "add": "schematics ./schematics/collection.json:library-starter --debug=false",
         "postadd": "git add ./projects",
         "lint": "ng lint",
+        "format": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}'",
         "lint:less": "stylelint '**/*.less'",
         "typecheck": "tsc --noEmit --skipLibCheck",
         "release": "standard-version",

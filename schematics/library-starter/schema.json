@@ -15,7 +15,5 @@
             "x-prompt": "What is the name of your library?"
         }
     },
-    "required": [
-        "name"
-    ]
+    "required": ["name"]
 }
