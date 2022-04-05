@@ -1,0 +1,4 @@
+**/dist/**
+**/coverage/**
+**/schematics/*/files/**/*
+package-lock.json

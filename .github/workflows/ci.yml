@@ -7,7 +7,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Setup Node.js and Cache
-              uses: Tinkoff/taiga-ui/.github/actions/nodejs
+              uses: ./.github/actions/nodejs
 
             - name: Install dependencies
               run: npm ci
