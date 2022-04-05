@@ -8,6 +8,7 @@ import * as express from 'express';
 import {Express} from 'express';
 import {existsSync} from 'fs';
 import {join} from 'path';
+
 import {AppServerModule} from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
@@ -61,8 +62,7 @@ function run() {
     const server = app();
 
     server.listen(port, () => {
-        // tslint:disable-next-line:no-console
-        console.log(`Node Express server listening on http://localhost:${port}`);
+        console.info(`Node Express server listening on http://localhost:${port}`);
     });
 }
 

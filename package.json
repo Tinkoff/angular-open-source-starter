@@ -2,6 +2,7 @@
     "name": "@tinkoff/angular-open-source-starter",
     "version": "1.0.0",
     "scripts": {
+        "postinstall": "husky install && ngcc --async",
         "ng": "ng",
         "start": "ng serve",
         "dev:ssr": "ng run demo:serve-ssr",
@@ -16,10 +17,10 @@
         "preadd": "npm run build:schematics",
         "add": "schematics ./schematics/collection.json:library-starter --debug=false",
         "postadd": "git add ./projects",
-        "lint": "ng lint",
+        "lint": "eslint .",
         "format": "prettier '**/*.{svg,yml,js,ts,html,md,less,json}'",
-        "lint:less": "stylelint '**/*.less'",
-        "typecheck": "tsc --noEmit --skipLibCheck",
+        "stylelint": "stylelint '**/*.{less,css}'",
+        "typecheck": "tsc --noEmit --skipLibCheck --incremental false --tsBuildInfoFile null",
         "release": "standard-version",
         "release:patch": "npm run release -- --release-as patch",
         "release:minor": "npm run release -- --release-as minor",
@@ -59,14 +60,14 @@
         "@angular/platform-browser-dynamic": "^9.1.13",
         "@angular/platform-server": "^9.1.13",
         "@angular/router": "^9.1.13",
-        "@nguniversal/express-engine": "^9.1.1",
         "@ng-web-apis/common": "^1.9.0",
         "@ng-web-apis/universal": "^1.9.2",
-        "core-js": "^2.6.9",
-        "express": "^4.15.2",
-        "rxjs": "~6.6.3",
-        "tslib": "^1.10.0",
-        "zone.js": "~0.10.2"
+        "@nguniversal/express-engine": "^9.1.1",
+        "core-js": "^2.6.12",
+        "express": "^4.17.3",
+        "rxjs": "~6.6.7",
+        "tslib": "^1.14.1",
+        "zone.js": "~0.11.5"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.901.13",
@@ -77,49 +78,43 @@
         "@angular/cli": "^9.1.13",
         "@angular/compiler-cli": "^9.1.13",
         "@angular/language-service": "^9.1.13",
-        "@commitlint/cli": "^11.0.0",
-        "@commitlint/config-conventional": "^11.0.0",
+        "@commitlint/cli": "^16.2.3",
+        "@commitlint/config-conventional": "^16.2.1",
         "@nguniversal/builders": "^9.1.1",
-        "@tinkoff/linters": "^0.6.0",
-        "@types/express": "^4.17.0",
-        "@types/jasmine": "^3.6.2",
-        "@types/jasminewd2": "^2.0.8",
-        "@types/node": "12.19.9",
-        "coveralls": "^3.1.0",
-        "husky": "^4.3.6",
-        "jasmine-core": "^3.6.0",
-        "jasmine-spec-reporter": "^6.0.0",
-        "karma": "^5.2.3",
-        "karma-chrome-launcher": "^3.1.0",
-        "karma-coverage-istanbul-reporter": "^3.0.3",
-        "karma-jasmine": "^4.0.1",
-        "karma-jasmine-html-reporter": "^1.5.4",
-        "lint-staged": "^10.5.3",
-        "ng-packagr": "9.1.5",
-        "standard-version": "^9.0.0",
-        "stylelint": "^10.0.1",
-        "ts-node": "^9.1.1",
-        "tslint": "~5.15.0",
-        "tsutils": "^3.17.1",
-        "typescript": "~3.8.3",
         "@tinkoff/eslint-config": "^1.29.2",
-        "@tinkoff/eslint-config-angular": "^1.29.0",
+        "@tinkoff/eslint-config-angular": "^1.29.3",
         "@tinkoff/prettier-config": "^1.29.1",
-        "@tinkoff/stylelint-config": "^1.16.1",
-        "prettier": "^2.6.2"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-commit": "lint-staged && npm run typecheck"
-        }
+        "@tinkoff/stylelint-config": "^1.30.0",
+        "@types/express": "^4.17.13",
+        "@types/jasmine": "^3.10.5",
+        "@types/jasminewd2": "^2.0.10",
+        "@types/node": "17.0.23",
+        "jasmine-core": "^3.99.1",
+        "jasmine-spec-reporter": "^6.0.0",
+        "karma": "^6.3.17",
+        "karma-chrome-launcher": "^3.1.1",
+        "karma-coverage-istanbul-reporter": "^3.0.3",
+        "karma-jasmine": "^4.0.2",
+        "karma-jasmine-html-reporter": "^1.7.0",
+        "lint-staged": "^12.3.7",
+        "ng-packagr": "9.1.5",
+        "prettier": "^2.6.2",
+        "standard-version": "^9.3.2",
+        "ts-node": "^10.7.0",
+        "tsutils": "^3.21.0",
+        "typescript": "~3.8.3",
+        "husky": "^7.0.4"
     },
     "lint-staged": {
         "*.{js,ts,html,md,less,json}": [
+            "npm run lint -- --fix",
             "prettier --write",
             "git add"
         ],
-        "*.ts": "tslint --fix"
+        "*.less": [
+            "stylelint --fix",
+            "git add"
+        ]
     },
     "standard-version": {
         "scripts": {
@@ -127,7 +122,8 @@
         }
     },
     "engines": {
-        "node": ">= 10",
-        "npm": ">= 3"
+        "node": ">= 14",
+        "npm": ">= 7",
+        "yarn": "Please use npm instead of yarn to install dependencies"
     }
 }

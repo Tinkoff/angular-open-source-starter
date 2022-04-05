@@ -84,16 +84,6 @@ function updateAngular(tree: Tree, name: string) {
                     browsers: 'ChromeHeadless',
                 },
             },
-            lint: {
-                builder: '@angular-devkit/build-angular:tslint',
-                options: {
-                    tsConfig: [
-                        `projects/${name}/tsconfig.lib.json`,
-                        `projects/${name}/tsconfig.spec.json`,
-                    ],
-                    exclude: ['**/node_modules/**'],
-                },
-            },
         },
     };
     const angularJson: Buffer | null = tree.read(ANGULAR_JSON_PATH);
