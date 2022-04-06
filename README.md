@@ -63,14 +63,15 @@ automatically generated on releases by
 ## Infrastructure
 
 - [x] GitHub Actions
-- [x] Node.js 16, npm 8
-- [ ] Nx 13+
-- [ ] Angular 12+
-- [ ] TypeScript 4+
+- [x] Node.js 16+, npm 8+
+- [x] Angular 12+
+- [x] TypeScript 4+
 - [x] Prettier 2.6+
 - [x] Stylelint 14+
 - [x] ESLint 7+
 - [x] Husky 7+
+- [x] Cypress 9+
+- [ ] Nx 13+
 
 ## Badge
 
