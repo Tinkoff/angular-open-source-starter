@@ -3,7 +3,11 @@
  */
 module.exports = {
     root: true,
-    extends: ['@tinkoff/eslint-config-angular', '@tinkoff/eslint-config-angular/html'],
+    extends: [
+        '@tinkoff/eslint-config-angular',
+        '@tinkoff/eslint-config-angular/html',
+        '@tinkoff/eslint-config-angular/rxjs',
+    ],
     ignorePatterns: ['projects/**/test.ts', '*.json', '*.less', '*.md', '*.js'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
