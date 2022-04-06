@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CYPRESS_CACHE_FOLDER: ./node_modules/cache-cypress
+      UNIVERSAL_SERVER: http://localhost:4000
+      STATIC_SERVER: http://localhost:8080
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js and Cache
@@ -14,27 +16,27 @@ jobs:
       - name: Build demo
         run: npm run build
 
-      - name: Build ssr server
-        run: npm run build:ssr
-
       - name: Prerender demo
         run: npm run build:prerender
 
       - name: Serving static files
         run: |
           npm run serve:prerender & sleep 5
-          curl -X GET -I -f "http://localhost:8080"
+          curl -X GET -I -f "${{ env.STATIC_SERVER }}"
 
       - name: Run cypress / ssr / prerender
-        run: npm run cy:run -- --spec **/ssr/*.spec.ts --config baseUrl="http://localhost:8080"
+        run: npm run cy:run -- --spec "**/ssr/*.spec.ts" --config baseUrl="${{ env.STATIC_SERVER }}"
+
+      - name: Build ssr server
+        run: npm run build:ssr
 
       - name: Serving ssr server
         run: |
           npm run serve:ssr & sleep 5
-          curl -X GET -I -f "http://localhost:4000"
+          curl -X GET -I -f "${{ env.UNIVERSAL_SERVER }}"
 
       - name: Run cypress / ssr / universal
-        run: npm run cy:run -- --spec **/ssr/*.spec.ts --config baseUrl="http://localhost:8080"
+        run: npm run cy:run -- --spec "**/ssr/*.spec.ts" --config baseUrl="${{ env.UNIVERSAL_SERVER }}"
 
 concurrency:
   group: integration-e2e-${{ github.head_ref }}
