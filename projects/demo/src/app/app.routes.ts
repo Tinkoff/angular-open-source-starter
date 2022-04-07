@@ -22,6 +22,7 @@ export const appRoutes: Routes = [
     imports: [
         RouterModule.forRoot(appRoutes, {
             initialNavigation: 'enabled',
+            relativeLinkResolution: 'corrected',
         }),
     ],
     exports: [RouterModule],
