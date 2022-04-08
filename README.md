@@ -71,7 +71,7 @@ automatically generated on releases by
 - [x] ESLint 7+
 - [x] Husky 7+
 - [x] Cypress 9+
-- [ ] Nx 13+
+- [x] Nx 13+
 
 ## Badge
 
