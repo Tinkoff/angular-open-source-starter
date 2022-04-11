@@ -1,3 +1,4 @@
+import {APP_BASE_HREF} from '@angular/common';
 import {TestBed} from '@angular/core/testing';
 import {Router} from '@angular/router';
 
@@ -10,6 +11,7 @@ describe('Test dummy', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [AppBrowserModule],
+            providers: [{provide: APP_BASE_HREF, useValue: '/'}],
         });
 
         component = TestBed.createComponent(AppComponent);
