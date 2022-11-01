@@ -13,17 +13,24 @@
 
 1. Run `npm ci` to install everything
 
-2. Run `npm run add [your-library-name]` to create basic file structure
+2. Change `npmScope` inside `nx.json`
 
-3. Fill in `projects/[your-library-name]/package.json` metadata for your newly generated library
+3. Create basic file structure via [Nx-generators](https://nx.dev/plugin-features/use-code-generators):
 
-4. Add your email at [INSERT YOUR EMAIL HERE] in `CODE_OF_CONDUCT.md`
+   - `nx g @nrwl/js:lib [your-library-name]` - create Typescript library. See
+     [available options](https://nx.dev/packages/js/generators/library#options).
+   - `nx g @nrwl/angular:lib [your-library-name]` - create Angular library. See
+     [available options](https://nx.dev/packages/angular/generators/library#options).
 
-5. Update `LICENSE` file according to your preferences
+4. Fill in `projects/[your-library-name]/package.json` metadata for your newly generated library
 
-6. Updated root `package.json` metadata to represent your project
+5. Add your email at [INSERT YOUR EMAIL HERE] in `CODE_OF_CONDUCT.md`
 
-7. Code your library and create demo for it
+6. Update `LICENSE` file according to your preferences
+
+7. Update root `package.json` metadata to represent your project
+
+8. Code your library and create demo for it
 
 ## Cool features
 

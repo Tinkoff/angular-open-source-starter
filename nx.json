@@ -34,8 +34,18 @@
             "buildable": true,
             "strict": true,
             "linter": "none",
-            "unitTestRunner": "none",
+            "unitTestRunner": "jest",
             "config": "workspace"
+        },
+        "@nrwl/angular:lib": {
+            "buildable": true,
+            "compilationMode": "partial",
+            "linter": "none",
+            "unitTestRunner": "jest",
+            "strict": true,
+            "changeDetection": "OnPush",
+            "style": "less",
+            "skipModule": true
         }
     }
 }
