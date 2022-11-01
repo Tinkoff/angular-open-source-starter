@@ -64,8 +64,9 @@ automatically generated on releases by
 
          https://stackblitz.com/github/[User|Organization]/[Repository]/tree/main/projects/demo
 
-- [x] You can add more libraries using the same `npm run add` command to create a whole Angular Workspace with multiple
-      libraries. Versioning and publishing is configured that they are released simultaneously like Angular packages.
+- [x] You can add more libraries using the same [Nx-generators](https://nx.dev/plugin-features/use-code-generators) to
+      create a whole Angular Workspace with multiple libraries. Versioning and publishing is configured that they are
+      released simultaneously like Angular packages.
 
 ## Infrastructure
 
