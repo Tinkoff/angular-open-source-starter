@@ -42,7 +42,7 @@
   "release:patch": "npm run release -- --release-as patch",
   "release:minor": "npm run release -- --release-as minor",
   "release:major": "npm run release -- --release-as major",
-  "publish": "npm run build:all && npm publish:all"
+  "publish": "nx run-many --target build --all --exclude=demo && nx run-many --target publish --all"
 }
 ```
 
