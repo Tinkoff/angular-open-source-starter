@@ -37,14 +37,12 @@
             "unitTestRunner": "jest",
             "config": "workspace"
         },
-        "@nrwl/angular:lib": {
+        "@nrwl/angular:library": {
             "buildable": true,
             "compilationMode": "partial",
             "linter": "none",
             "unitTestRunner": "jest",
             "strict": true,
-            "changeDetection": "OnPush",
-            "style": "less",
             "skipModule": true
         }
     }
