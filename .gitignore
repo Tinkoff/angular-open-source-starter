@@ -1,8 +1,3 @@
-# compiled schematics
-schematics/library-starter/*.js
-schematics/library-starter/*.js.map
-schematics/library-starter/*.d.ts
-
 # compiled output
 /dist
 /tmp

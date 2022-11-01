@@ -28,5 +28,22 @@
         "libsDir": "projects",
         "appsDir": "projects"
     },
-    "defaultProject": "demo"
+    "defaultProject": "demo",
+    "generators": {
+        "@nrwl/js:library": {
+            "buildable": true,
+            "strict": true,
+            "linter": "none",
+            "unitTestRunner": "jest",
+            "config": "workspace"
+        },
+        "@nrwl/angular:library": {
+            "buildable": true,
+            "compilationMode": "partial",
+            "linter": "none",
+            "unitTestRunner": "jest",
+            "strict": true,
+            "skipModule": true
+        }
+    }
 }
