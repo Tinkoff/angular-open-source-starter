@@ -28,5 +28,14 @@
         "libsDir": "projects",
         "appsDir": "projects"
     },
-    "defaultProject": "demo"
+    "defaultProject": "demo",
+    "generators": {
+        "@nrwl/js:library": {
+            "buildable": true,
+            "strict": true,
+            "linter": "none",
+            "unitTestRunner": "none",
+            "config": "workspace"
+        }
+    }
 }
