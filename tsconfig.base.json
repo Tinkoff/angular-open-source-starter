@@ -1,0 +1,8 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "TODO": ["DROP_THE_WHOLE_FILE_AFTER_UPDATE_ALL_@nrwl/*_TO_13.8.6"]
+        }
+    }
+}

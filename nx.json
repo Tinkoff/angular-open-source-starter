@@ -14,7 +14,6 @@
     "npmScope": "angular-open-source-starter",
     "tasksRunnerOptions": {
         "default": {
-            "runner": "@nx-cloud/runners/firebase",
             "options": {
                 "cacheableOperations": ["build", "test", "lint"],
                 "parallel": 1
