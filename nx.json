@@ -35,7 +35,7 @@
             "strict": true,
             "linter": "none",
             "unitTestRunner": "jest",
-            "config": "workspace"
+            "config": "project"
         },
         "@nrwl/angular:library": {
             "buildable": true,
@@ -43,7 +43,8 @@
             "linter": "none",
             "unitTestRunner": "jest",
             "strict": true,
-            "skipModule": true
+            "skipModule": true,
+            "standaloneConfig": true
         }
     }
 }
