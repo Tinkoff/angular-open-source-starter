@@ -86,6 +86,7 @@
         "@nrwl/jest": "13.1.4",
         "@nrwl/js": "13.3.0",
         "@nrwl/node": "13.1.4",
+        "@nrwl/nx-cloud": "13.1.4",
         "@nrwl/tao": "13.1.4",
         "@nrwl/workspace": "13.1.4",
         "@tinkoff/eslint-config": "^1.29.2",
