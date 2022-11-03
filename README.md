@@ -52,7 +52,7 @@ automatically generated on releases by
 
 - [x] This project has Angular Universal — you can easily test your library with SSR and Prerender:
 
-  `npm run dev:ssr` or `npm run prerender`
+  `npm run serve:dev:ssr` or `npm run build:prerender && npm run serve:prerender`
 
 - [x] CI and code coverage are ready, GitHub Action checks that packages build, test and lint correctly. It also sends
       test results to [Codecov](https://about.codecov.io).
@@ -78,7 +78,7 @@ automatically generated on releases by
 - [x] Stylelint 14+
 - [x] ESLint 7+
 - [x] Husky 7+
-- [x] Cypress 9+
+- [x] Cypress 10+
 - [x] Jest 27+
 - [x] Nx 13+
 
