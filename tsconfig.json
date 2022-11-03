@@ -1,34 +1,6 @@
+// TODO after update all "@nrwl/*"-packages to 13.8.6+:
+// 1. Drop this file
+// 2. Rename "tsconfig.base.json" => "tsconfig.json"
 {
-    "compileOnSave": false,
-    "angularCompilerOptions": {
-        "enableIvy": true,
-        "preserveWhitespaces": false,
-        "annotateForClosureCompiler": false,
-        "skipTemplateCodegen": true,
-        "strictMetadataEmit": true,
-        "fullTemplateTypeCheck": true,
-        "strictInjectionParameters": true,
-        "enableResourceInlining": true,
-        "strictLiteralTypes": true,
-        "strictInputTypes": true
-    },
-    "compilerOptions": {
-        "baseUrl": "./",
-        "outDir": "./dist/out-tsc",
-        "sourceMap": true,
-        "declaration": false,
-        "module": "es2020",
-        "moduleResolution": "node",
-        "experimentalDecorators": true,
-        "importHelpers": true,
-        "strict": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "noUnusedParameters": true,
-        "noUnusedLocals": true,
-        "target": "es2015",
-        "typeRoots": ["node_modules/@types"],
-        "lib": ["es2018", "dom"],
-        "paths": {}
-    }
+    "extends": "./tsconfig.base.json"
 }
