@@ -8,8 +8,6 @@
         "build": {
             "executor": "@angular-devkit/build-angular:browser",
             "options": {
-                "baseHref": "",
-                "deployUrl": "",
                 "outputPath": "dist/demo/browser",
                 "index": "projects/demo/src/index.html",
                 "main": "projects/demo/src/main.browser.ts",
@@ -51,9 +49,12 @@
                             "maximumError": "5mb"
                         }
                     ]
+                },
+                "development": {
+                    "baseHref": "/"
                 }
             },
-            "defaultConfiguration": ""
+            "defaultConfiguration": "production"
         },
         "serve": {
             "executor": "@angular-devkit/build-angular:dev-server",
@@ -65,8 +66,12 @@
             "configurations": {
                 "production": {
                     "browserTarget": "demo:build:production"
+                },
+                "development": {
+                    "browserTarget": "demo:build:development"
                 }
-            }
+            },
+            "defaultConfiguration": "development"
         },
         "serve-ip": {
             "builder": "@nrwl/workspace:run-commands",
@@ -111,9 +116,10 @@
                     "outputHashing": "media",
                     "sourceMap": false,
                     "optimization": true
-                }
+                },
+                "development": {}
             },
-            "defaultConfiguration": ""
+            "defaultConfiguration": "production"
         },
         "serve-ssr": {
             "executor": "@nguniversal/builders:ssr-dev-server",
@@ -125,8 +131,13 @@
                 "production": {
                     "browserTarget": "demo:build:production",
                     "serverTarget": "demo:server:production"
+                },
+                "development": {
+                    "serverTarget": "demo:server:development",
+                    "browserTarget": "demo:build:development"
                 }
-            }
+            },
+            "defaultConfiguration": "development"
         },
         "prerender": {
             "executor": "@nguniversal/builders:prerender",
