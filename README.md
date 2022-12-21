@@ -13,7 +13,8 @@
 
 1. Run `npm ci` to install everything
 
-2. Change `npmScope` inside `nx.json`
+2. Use search to replace all mentions of `angular-open-source-starter` with your new library name (`npmScope` inside
+   `nx.json`, matadata of the root `package.json`, root `README.md` etc.)
 
 3. Create basic file structure via [Nx-generators](https://nx.dev/plugin-features/use-code-generators):
 
