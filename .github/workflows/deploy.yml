@@ -2,7 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - broken-gh-pages
+      - main
 
 jobs:
   deploy:
