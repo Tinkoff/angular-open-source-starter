@@ -30,5 +30,13 @@
         "typeRoots": ["node_modules/@types"],
         "lib": ["es2018", "dom"],
         "paths": {}
+    },
+    "ts-node": {
+        "files": true,
+        "transpileOnly": true,
+        "compilerOptions": {
+            "types": ["node"],
+            "module": "commonjs"
+        }
     }
 }
